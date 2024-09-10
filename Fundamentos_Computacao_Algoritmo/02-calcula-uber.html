@@ -12,6 +12,18 @@
     }
 
     function calculaCorrida(){
+       
+       
+        var isCampoDistanciaEstaVazio = campoEmKM.value == '';
+
+            if(isCampoDistanciaEstaVazio){
+            alert ('Não tem valor de distancia')
+            return /* pausa o codigo pra não executar o resto do codigo */
+            
+
+        }
+
+
         var tarifaDinamica = 1.3;
         var distanciaEmKM = campoEmKM.value * tarifaDinamica;
         var tempoEmMin = campoTempo.value * 0.26;
