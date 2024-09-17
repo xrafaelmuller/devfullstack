@@ -1,0 +1,51 @@
+<script>
+    console.log('Queue')
+
+
+    //shift = retira o primeiro record da lista
+    
+    var queue = [
+        'script.js',
+        'style.css',
+        'img.png'
+
+    ]
+    //addd
+    queue.push('dog.png')
+    //remove 1 record
+    queue.shift();
+
+    class Queue{
+
+        constructor(){
+            this.data = [];
+
+
+        }
+
+
+        print(){
+            console.log(this.data);
+        }
+      enqueue (item) {
+        this.data.push(item)
+      }
+
+      dequeue () {
+        this.data.shift();
+      }
+
+
+    }
+
+
+        var requests = new Queue();
+        requests.enqueue('scripts.js')
+        requests.print();
+        requests.enqueue('style.css')
+        requests.enqueue('img.png')
+        requests.enqueue('dog.png')
+        requests.print();
+
+
+</script>
